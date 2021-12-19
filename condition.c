@@ -8,7 +8,7 @@ int main(void) {
 
 	printf("Are you ok?");
 
-	/*reads formatted data from stdin (i.e, the standard input stream, which is usually the keyboard,
+	/*function that reads formatted data from stdin (i.e, the standard input stream, which is usually the keyboard,
 	 and then writes the results into the arguments given*/
 	scanf("%c", &input);
 

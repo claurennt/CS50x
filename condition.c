@@ -13,11 +13,12 @@ int main(void) {
 	fgets(c, 2, stdin);
 
 
-		if (strcmp(c, "y")==0) {
-			printf("Yes! \n");
-		}
-		else if (strcmp(c, "n") == 0) {
-			printf("No :( \n");
-			}
-		return(0);
+	//cmpare
+	if (strcmp(c, "y") == 0 || strcmp(c, "Y") == 0) {
+		printf("Yes! \n");
+	}
+	else if (strcmp(c, "n") == 0 || strcmp(c, "N") == 0) {
+		printf("No :(\n");
+	}
+	return (0);
 }

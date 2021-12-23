@@ -1,99 +1,47 @@
 #include <stdio.h>
 
+//function declarations
 int get_pyramid_height(void);
-char fff(int);
+char print_pyramids(int);
 
 int main(void) {
 
-    int h = get_pyramid_height();
+    int height = get_pyramid_height();
 
-    fff(h);
+    printf("\n");
 
-
-
-
-    // for (int i = 0; i < h;i++) {
-    //    
-    //     pr for (int k = 1; k < h;k++) {
-    //         printf(".");
-
-    //     }intf("#");
-    //     printf("\n");
-    //     h--;
-    //     for (int k = 0; k < h - 1;k++) {
-    //         printf(".");
-
-    //     }
-    //     for (int f = 0; f < h - 1;f++) {
-    //         printf("#");
-
-    //     }
-
-    //     printf("\n");
-    //     h--;
-    //     for (int k = 0; k < h - 1;k++) {
-    //         printf(".");
-
-    //     }
-    //     for (int f = 0; f < h - 1;f++) {
-    //         printf("#");
-
-    //     }
-    //     printf("\n");
-    // }
-
-
+    print_pyramids(height);
 
 }
 
-char fff(int h) {
-    if (h < 1) {
 
-        return 0;
-    }
-
+//function definitions
+char print_pyramids(int h) {
     for (int x = 0; x < h;x++) {
 
+        for (int y = 0; y < h - x - 1; y++) {
+
+            printf(" ");
+        }
+        //this prints the left pyramid
+        for (int j = 0; j < x + 1; j++) {
+
+            printf("#");
+        }
 
         printf("  ");
-        printf("#");
 
-        for (int j = h - x; j < h;j++) {
+        //this prints the right pyramid
+        for (int a = h - x - 1; a < h;a++) {
 
             printf("#");
 
         }
 
         printf("\n");
+
     }
-
-
-
-
-
-
 }
-
-
-
-// for (int i = 0; i < h;i++) {
-
-
-//     for (int y = 1;y < h; y++) {
-
-//         printf(".");
-//     }
-//     printf("#");
-
-//     printf(".");
-//     printf("#");
-
-//     printf("\n");
-
-
-// }
-
-
 
 
 int get_pyramid_height() {

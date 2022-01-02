@@ -2,7 +2,7 @@
 
 //function declarations
 int get_pyramid_height(void);
-char print_pyramids(int);
+void print_pyramids(int);
 
 int main(void) {
 
@@ -16,7 +16,7 @@ int main(void) {
 
 
 //function definitions
-char print_pyramids(int h) {
+void print_pyramids(int h) {
     for (int x = 0; x < h;x++) {
 
         for (int y = 0; y < h - x - 1; y++) {

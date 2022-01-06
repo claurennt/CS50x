@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
 
     int height = get_pyramid_height();
 
@@ -18,4 +19,3 @@ int main() {
 
     print_left_right_pyramids(height);
 }
-

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-
-int main(void) {
+int main(void)
+{
 	//initialize char
 	char input;
 
@@ -12,20 +12,17 @@ int main(void) {
 	 and then writes the results into the arguments given*/
 	scanf("%c", &input);
 
-
 	//if condition and comparison
-	if (input == 'Y' || input == 'y') {
+	if (input == 'Y' || input == 'y')
+	{
 		printf(" :) \n");
 	}
-	else if (input == 'N' || input == 'n') {
+	else if (input == 'N' || input == 'n')
+	{
 		printf(" :(\n");
 	}
 	return (0);
 }
-
-
-
-
 
 // ################## SOLUTION WITH FGETS AND STRCMP
 // int main(void) {
@@ -38,7 +35,6 @@ int main(void) {
 // 	including the final null char '\0' that terminates the strings */
 // 	//third arg is in our case standard input which is the keyboard
 // 	fgets(c, 2, stdin);
-
 
 // 	//cmpare
 // 	if (strcmp(c, "y") == 0 || strcmp(c, "Y") == 0) {

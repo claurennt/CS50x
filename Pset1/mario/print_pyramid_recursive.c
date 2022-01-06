@@ -3,14 +3,16 @@
 
 #include <stdio.h>
 
-void print_pyramid_recursive(int h) {
-    if ((h - 1) != 0) {
+void print_pyramid_recursive(int h)
+{
+    if ((h - 1) != 0)
+    {
         print_left_pyramid(h);
     }
-    for (int i = 0; i < h;i++) {
+    for (int i = 0; i < h; i++)
+    {
 
         printf("#");
-
     }
     printf("\n");
 }
